@@ -1,4 +1,4 @@
-# hello, world
+# 1. hello, world
 
 This is my first attempt writing x86_64 assembly using NASM. Of course, we'll write a 'hello, world' programme.
 
