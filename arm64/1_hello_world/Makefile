@@ -12,7 +12,3 @@ $(OUTPUT): $(OBJECTS)
 
 clean:
 	rm -f $(OBJECTS) $(OUTPUT)
-
-list:
-	@echo "Sources: $(SOURCES)"
-	@echo "Objects: $(OBJECTS)"
