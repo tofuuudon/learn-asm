@@ -1,16 +1,22 @@
+.text
+
 .global _start
 .align  4
 
 _start:
-	mov X0, #1
-	adr X1, hello_world
-	mov X2, #13
-	mov X16, #4
+	mov x0, #1
+	adrp x1, hello_world@PAGE
+  add x1, x1, hello_world@PAGEOFF
+	mov x2, #13
+	mov x16, #4
 	svc #0x80
 
-	mov X0, #0
-	mov X16, #1
+	mov x0, #0
+	mov x16, #1
 	svc #0x80
+
+
+.data
 
 hello_world:
 	.asciz "hello, world!"
